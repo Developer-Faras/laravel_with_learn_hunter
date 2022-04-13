@@ -13,8 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route Get
 Route::get('/', function () {
     return view('home');
 });
 
+// Route View
 Route::view('/about', 'about');
+
+// Route Any
+Route::any('/services', function () {
+    return view('services');
+});
+
+
+// Route Macth
+Route::match(['get', 'post'], '/contact', function () {
+    return view('contact');
+});
