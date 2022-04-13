@@ -35,8 +35,10 @@ Route::match(['get', 'post'], '/contact', function () {
 // Route Redirect
 Route::redirect('/redirect', '/contact');
 
+// Route With Another Folder Views
+Route::view('/another', 'layout.another');
 
 // Route With Parametars
-Route::get('users/{id}', function ($id) {
-    return "<h1>Passed Parameter Id Is: $id";
-});
+// Route::get('/users/{id}', function ($id) {
+//     return "<h1>Passed Parameter Id Is: $id </h1> <a href='".url('/')."'>Back To Home</a>";
+// });
