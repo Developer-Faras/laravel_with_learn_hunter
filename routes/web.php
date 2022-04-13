@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 // Route Get
 Route::get('/', function () {
-    return view('home');
+    return view('homenew');
 });
 
 // Route View
@@ -39,6 +39,6 @@ Route::redirect('/redirect', '/contact');
 Route::view('/another', 'layout.another');
 
 // Route With Parametars
-// Route::get('/users/{id}', function ($id) {
-//     return "<h1>Passed Parameter Id Is: $id </h1> <a href='".url('/')."'>Back To Home</a>";
-// });
+Route::get('/users/{id}', function ($id) {
+    return "<h1>Passed Parameter Id Is: $id </h1> <a href='".url('/')."'>Back To Home</a>";
+});
