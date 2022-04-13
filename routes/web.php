@@ -33,6 +33,10 @@ Route::match(['get', 'post'], '/contact', function () {
 });
 
 // Route Redirect
-Route::get('/redirect', function () {
-    return redirect('/contact');
+Route::redirect('/redirect', '/contact');
+
+
+// Route With Parametars
+Route::get('users/{id}', function ($id) {
+    return "<h1>Passed Parameter Id Is: $id";
 });
