@@ -31,3 +31,8 @@ Route::any('/services', function () {
 Route::match(['get', 'post'], '/contact', function () {
     return view('contact');
 });
+
+// Route Redirect
+Route::get('/redirect', function () {
+    return redirect('/contact');
+});
