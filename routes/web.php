@@ -48,6 +48,11 @@ Route::get('/thisIsNameRoute', function () {
     return view('layout.name');
 })->name('name');
 
+// Named Route With Parametars
+Route::get('/user/{id}', function ($id) {
+    return view('layout.name');
+})->name('namedid');
+
 // Encripted Route
 Route::get(md5('encripted'), function () {
     return view('layout.encripted');
