@@ -42,3 +42,8 @@ Route::view('/another', 'layout.another');
 Route::get('/users/{id}', function ($id) {
     return "<h1>Passed Parameter Id Is: $id </h1> <a href='".url('/')."'>Back To Home</a>";
 });
+
+// Named Route
+Route::get('/thisIsNameRoute', function () {
+    return view('layout.name');
+})->name('name');

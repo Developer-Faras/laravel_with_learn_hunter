@@ -9,4 +9,5 @@
     <li><a href="{{ url('/redirect') }}">Redirect</a></li>
     <li><a href="{{ url('/another') }}">Another Folder View</a></li>
     <li><a href="{{ url('/users/100') }}">Parametars 100</a></li>
+    <li><a href="{{ route('name') }}">Named Route</a></li>
 </ul>
