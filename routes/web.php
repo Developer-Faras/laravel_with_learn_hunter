@@ -47,3 +47,8 @@ Route::get('/users/{id}', function ($id) {
 Route::get('/thisIsNameRoute', function () {
     return view('layout.name');
 })->name('name');
+
+// Encripted Route
+Route::get(md5('encripted'), function () {
+    return view('layout.encripted');
+})->name('encripted');
