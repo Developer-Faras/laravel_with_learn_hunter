@@ -13,3 +13,5 @@
     <li><a href="{{ route('encripted') }}">Encripted Route</a></li>
     <li><a href="{{ route('namedid', ['id' => 100]) }}">Named Route With Parametars</a></li>
 </ul>
+
+{{-- Simple Comment --}}
