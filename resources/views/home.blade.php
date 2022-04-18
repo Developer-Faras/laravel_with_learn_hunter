@@ -14,4 +14,4 @@
     <li><a href="{{ route('namedid', ['id' => 100]) }}">Named Route With Parametars</a></li>
 </ul>
 
-{{-- Simple Comment --}}
+{{-- Simple Comment In Blade Templating --}}
