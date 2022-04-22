@@ -61,3 +61,6 @@ Route::get(md5('encripted'), function () {
 
 
 // Route For Middleware
+Route::get('/country', function () {
+    return view('layout.country');
+})->middleware('country');
