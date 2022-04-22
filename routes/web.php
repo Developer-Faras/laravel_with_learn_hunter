@@ -57,3 +57,7 @@ Route::get('/user/{id}', function ($id) {
 Route::get(md5('encripted'), function () {
     return view('layout.encripted');
 })->name('encripted');
+
+
+
+// Route For Middleware
