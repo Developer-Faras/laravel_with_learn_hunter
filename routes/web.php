@@ -64,3 +64,10 @@ Route::get(md5('encripted'), function () {
 Route::get('/country', function () {
     return view('layout.country');
 })->middleware('country');
+
+// Route For Token Check
+Route::get('/token', function () {
+    $token = csrf_token();
+
+    dd($token);
+});
