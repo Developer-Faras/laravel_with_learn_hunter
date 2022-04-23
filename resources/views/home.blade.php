@@ -12,6 +12,8 @@
     <li><a href="{{ route('name') }}">Named Route</a></li>
     <li><a href="{{ route('encripted') }}">Encripted Route</a></li>
     <li><a href="{{ route('namedid', ['id' => 100]) }}">Named Route With Parametars</a></li>
+    <li><a href="{{ route('token') }}">CSRF Token</a></li>
+    <li><a href="{{ route('controller') }}">Controller</a></li>
 </ul>
 
 {{-- Simple Comment In Blade Templating --}}
